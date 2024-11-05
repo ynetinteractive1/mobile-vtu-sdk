@@ -61,82 +61,82 @@ example().catch(console.error);
 
 
 
-Method Details
+## Method Details
 
-checkBalance(currency)
-Parameters:
- currency (optional): The currency to check balance for (default is 'NGN').
+### `checkBalance(currency)`
 
-Returns: The current balance in the specified currency.
+**Parameters:**
+- `currency` (optional): The currency to check balance for (default is 'NGN').
 
+**Returns:** The current balance in the specified currency.
 
+---
 
- getDataPlans(operator)
+### `getDataPlans(operator)`
 
-Parameters:
-  operator: The operator for which to fetch data plans (e.g., 'mtn', 'airtel').
+**Parameters:**
+- `operator`: The operator for which to fetch data plans (e.g., 'mtn', 'airtel').
 
-Returns: A list of available data plans for the specified operator.
+**Returns:** A list of available data plans for the specified operator.
 
+---
 
+### `checkOperator(phone)`
 
-   checkOperator(phone)
+**Parameters:**
+- `phone`: The phone number to check the operator for.
 
-  Parameters:
-  phone: The phone number to check the operator for.
+**Returns:** The network operator for the given phone number.
 
-  Returns: The network operator for the given phone number.
+---
 
+### `topup(request)`
 
+**Parameters:**
+- `request`: An object containing the phone number, amount, and operator details.
 
-    topup(request)
+**Returns:** The response from the top-up operation.
 
-Parameters:
-request`: An object containing the phone number, amount, and operator details.
+---
 
-  Returns: The response from the top-up operation.
+### `bulkTopup(requests)`
 
+**Description:** This method is not available directly in the API. Adjustments may be needed in implementation.
 
+---
 
-    bulkTopup(requests)
+### `getTransactionStatus(transactionId)`
 
-   Description: This method is not available directly in the API. Adjustments may be needed in implementation.
+**Parameters:**
+- `transactionId`: The ID of the transaction to check.
 
+**Returns:** The status of the specified transaction.
 
+---
 
-    getTransactionStatus(transactionId)
+### `listTransactions()`
 
-  Parameters:
-  transactionId: The ID of the transaction to check.
+**Returns:** A list of all transactions made.
 
-  Returns: The status of the specified transaction.
+---
 
+### `listSupportedOperators()`
 
+**Returns:** A list of supported operators such as MTN, Airtel, Glo, and 9mobile.
 
-    listTransactions()
+---
 
-   Returns: A list of all transactions made.
+### `listMethods()`
 
+**Returns:** An array of all available methods with descriptions.
 
+---
 
-   listSupportedOperators()
-
-
-Returns: A list of supported operators such as MTN, Airtel, Glo, and 9mobile.
-
-
-
-    listMethods()
-
-  Returns:  An array of all available methods with descriptions.
-
-
-
- Error Handling
+## Error Handling
 
 Make sure to handle errors in your implementation. The SDK may throw errors for various reasons, such as invalid parameters or network issues. Use try-catch blocks to manage these exceptions effectively.
 
-Example of Error Handling
+### Example of Error Handling
 
 ```javascript
 try {
@@ -147,11 +147,12 @@ try {
 }
 ```
 
-Error Handling
+
+## Error Handling
 
 Make sure to handle errors in your implementation. The SDK may throw errors for various reasons, such as invalid parameters or network issues. Use try-catch blocks to manage these exceptions effectively.
 
-Example of Error Handling
+### Example of Error Handling
 
 ```javascript
 async function example() {

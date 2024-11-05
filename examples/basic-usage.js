@@ -19,4 +19,4 @@ async function example() {
 
 example().catch(console.error);
 
-//https://www.npmjs.com/package/mobilevtu-sdk
+//https://www.npmjs.com/package/mobilevtu-sdk    
