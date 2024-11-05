@@ -9,12 +9,13 @@ To install the SDK, run the following command:
 
 ```bash
 npm install mobilevtu-sdk
-
+```
 
 
 ### Example Usage
 
 To use the Mobile VTU SDK, you can import the `MobileVtuClient` and create an instance as shown below:
+
 
 ```javascript
 import { MobileVtuClient } from 'mobilevtu-sdk';
@@ -37,7 +38,7 @@ async function example() {
 example().catch(console.error);
 
 
-
+```
 
 
 
@@ -49,8 +50,8 @@ example().catch(console.error);
 | `getDataPlans(operator)`                | Fetches data plans for a specific operator.                        |
 | `checkOperator(phone)`                  | Checks the network operator for a given phone number.              |
 | `topup(request)`                        | Tops up a specified account.                                       |
-| `bulkTopup(requests)`                  | (Not available directly, handled in a different manner.)           |
-| `getTransactionStatus(transactionId)`  | Retrieves the status of a specific transaction.                    |
+| `bulkTopup(requests)`                   | (Not available directly, handled in a different manner.)           |
+| `getTransactionStatus(transactionId)`   | Retrieves the status of a specific transaction.                    |
 | `listTransactions()`                    | Lists all transactions made.                                       |
 | `listSupportedOperators()`              | Lists all supported operators.                                      |
 | `listMethods()`                         | Lists all available methods and their descriptions.                |
@@ -144,8 +145,7 @@ try {
 } catch (error) {
   console.error('Error fetching balance:', error.message);
 }
-
-
+```
 
 
 ## Error Handling
@@ -168,7 +168,7 @@ async function example() {
     console.error('Error checking balance:', error);
   }
 }
-
+```
 
 Conclusion
 This documentation provides a comprehensive overview of the mobilevtu-sdk. With its straightforward methods and clear structure, it allows for easy integration with the MobileVTU API for mobile top-up services.
